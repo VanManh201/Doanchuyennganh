@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+   /* CSS cho bộ lọc */
+    .filter-box {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .filter-box h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .filter-item {
+        margin-bottom: 15px;
+    }
+
+    .filter-item label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .filter-item input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    .filter-item select {
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    /* CSS cho danh sách tour */
+    .tour-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tour-item {
+        width: calc(33.33% - 20px);
+        margin: 0 10px 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .tour-thumbnail {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .tour-details {
+        margin-top: 10px;
+    }
+
+    .tour-title {
+        margin-top: 0;
+    }
+
+    .tour-price {
+        color: #007bff;
+    }
+
+    .tour-rating {
+        margin-top: 5px;
+        color: #ffc107;
+    }
+
+    .tour-link {
+        display: inline-block;
+        margin-top: 10px;
+        background-color: #007bff;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+    }

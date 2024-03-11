@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+/* Thiết lập style cho div container */
+.container {
+  width: 80%; /* Chiều rộng của container */
+  margin: 0 auto; /* Canh giữa container */
+}
+
+/* Thiết lập style cho h4 */
+h4 {
+  color: #333; /* Màu chữ */
+  font-size: 18px; /* Kích thước chữ */
+}
+
+/* Thiết lập style cho hình ảnh */
+img {
+  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá phần tử chứa */
+  height: auto; /* Đảm bảo tỷ lệ khung hình được giữ */
+}
+
+/* Thiết lập style cho bảng */
+table {
+  width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng của phần tử chứa */
+  border-collapse: collapse; /* Gộp các đường viền của ô */
+}
+
+/* Thiết lập style cho các ô của bảng */
+table td {
+  padding: 8px; /* Khoảng cách giữa nội dung và đường viền trong ô */
+  border: 1px solid #ddd; /* Đường viền ô */
+}
+
+/* Thiết lập style cho nút submit */
+button[type="submit"] {
+  padding: 10px 20px; /* Kích thước của nút */
+  background-color: #4caf50; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none; /* Loại bỏ đường viền */
+  border-radius: 4px; /* Bo tròn góc */
+  cursor: pointer; /* Con trỏ chuột khi di chuột vào nút */
+}
+
+/* Thiết lập style cho input text */
+input[type="text"] {
+  width: 100%; /* Chiều rộng */
+  padding: 8px; /* Khoảng cách giữa nội dung và đường viền */
+  margin-bottom: 10px; /* Khoảng cách dưới cùng */
+  box-sizing: border-box; /* Đảm bảo chiều rộng và padding không tăng chiều dài của phần tử */
+}
+#formNhapThongTin {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#formNhapThongTin h4 {
+    margin-bottom: 10px;
+}
+
+#formNhapThongTin h5 {
+    margin-top: 15px;
+}
+
+#formNhapThongTin label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formNhapThongTin input[type="text"],
+#formNhapThongTin input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#expandedImage {
+  padding-top: 100px;
+}body {
+  margin: 0;
+  padding: 0;
+}
+
+#expandedImage {
+  padding-top: 100px;
+}

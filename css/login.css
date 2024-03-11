@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('img_bg_2.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50,50,93,0.5) 0px 2px 15px 15px;
+    overflow: hidden;
+    transition: height .2s ease;
+  
+}
+
+.wrapper.active{
+    height: 520px
+}
+.wrapper .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px) ;
+}
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+h2{
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    margin: 35px 0;
+    width: 310px;
+    border-bottom: 2px solid black;
+    top: -5px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: black;
+}
+
+
+.input-box ion-icon{
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: 0.9em;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.forget label input{
+    margin-right: 3px;
+}
+.forget a{
+    color: black;
+    position: absolute;
+    right: 45px;
+    color: black;
+    font-size: 0.95em;
+    text-decoration: none;
+    
+}
+.forget label a:hover{
+    text-decoration: underline;
+    justify-content: space-between;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: black;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    transition: .5s;
+
+}
+button:hover{
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+}
+
+.login-register{
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.login-register p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+
+.other-tours-container {
+    display: flex; /* Sử dụng flexbox để xếp các tour ngang hàng */
+    flex-wrap: wrap; /* Cho phép các tour chuyển hàng nếu không đủ không gian */
+    justify-content: space-between; /* Căn các tour ra hai bên */
+}
+
+.other-tour {
+    width: calc(25% - 20px); /* Đặt chiều rộng cho mỗi tour (25% của chiều rộng của parent container) */
+    margin-bottom: 20px; /* Khoảng cách giữa các tour */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 10px; /* Bo tròn góc */
+    padding: 10px; /* Khoảng cách bên trong khung */
+    box-sizing: border-box; /* Đảm bảo kích thước của khung tính cả viền */
+}
+
+.other-tour img {
+    width: 100%; /* Đảm bảo hình ảnh trong khung hiển thị đúng tỉ lệ */
+    border-radius: 8px; /* Bo tròn góc của hình ảnh */
+}
+
+.other-tour h3 {
+    font-size: 18px; /* Cỡ chữ tiêu đề */
+    margin-top: 0; /* Loại bỏ khoảng trắng trên cùng */
+}
+
+.other-tour p {
+    margin-bottom: 5px; /* Khoảng cách giữa các đoạn văn bản */
+}
+
+.other-tour a {
+    display: inline-block; /* Đặt liên kết trong một hàng */
+    background-color: #007bff; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 5px 10px; /* Kích thước nút */
+    border-radius: 5px; /* Bo tròn góc */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.other-tour a:hover {
+    background-color: #0056b3; /* Màu nền khi di chuột qua */
+}
+.tour-details-container {
+    margin-bottom: 20px; /* Khoảng cách giữa các tour */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 10px; /* Bo tròn góc của khung */
+    overflow: hidden; /* Loại bỏ viền khung */
+	display: flex;
+}
+
+.tour-image-container {
+    float: left;
+    width: 50%;
+}
+
+.image-frame {
+    background-color: #fff; /* Màu nền trắng */
+    padding: 10px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tour-image {
+    width: 800px;
+    display: block;
+	margin-left: 20px;
+	height: auto;
+}
+.tour-info-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
+    align-items: flex-start; /* Căn phần tử con theo trục chính */
+    justify-content: flex-start; /* Căn phần tử con theo trục phụ */
+}
+
+.tour-info-right {
+    float: right;
+    width: 90%;
+	border: 1px solid #ccc;
+	background-color: ghostwhite;
+	border-radius: 10px;
+	margin-right: 450px;
+	margin-top: 10px;
+	display: flex;
+    justify-content: space-between;
+    gap: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.info-columns {
+    flex-grow: 1;
+    display: flex;
+    gap: 20px;
+}
+.left-column {
+    flex-basis: 60%;
+}
+
+.right-column {
+    flex-basis: 40%;
+}
+.tour-info-right strong {
+	margin-left: 10px;		
+}
+
+.tour-image-detail{
+	width: 300px;
+	margin-left: 40px;
+	}
+.additional-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.additional-image {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 5px;
+	margin-left: 20px;
+}
+.tour-info-left {
+    width: 90%;
+    float: right;
+    border: 1px solid #ccc;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    line-height: 1.5;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.travel-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-info, .right-info {
+    flex-basis: 48%;
+}
+
+.description-frame {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: ghostwhite; /* Màu nền */
+    border-radius: 10px;
+    width: 70%; /* Chiều rộng là 70% của parent container */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Căn giữa nội dung theo chiều ngang */
+    border: 1px solid #ccc; /* Viền bao quanh */
+}
+
+.tour-description {
+    /* Nội dung mô tả */
+    margin-top: 20px;
+    text-align: left; /* Căn trái nội dung mô tả */
+}
+.additional-content {
+    margin-top: 20px; /* Khoảng cách từ phía trên */
+    padding: 20px; /* Khoảng cách nội dung bên trong */
+    background-color: ghostwhite; /* Màu nền */
+    border: 1px solid #ddd; /* Viền */
+    border-radius: 10px; /* Bo góc */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+	margin-bottom: 20px;
+	width: 50%;
+}
+.additional-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.additional-content {
+    flex-grow: 1;
+}
+
+.contact-buttons {
+    margin-left: 20px;
+}
+
+.contact-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-left: 20px;
+}
+.contact-buttons button:hover {
+    background-color: firebrick; /* Màu nền khi di chuột qua */
+}
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px; /* Kích thước nút */
+    margin-left: 10px; /* Khoảng cách giữa các nút */
+    background-color: #007bff; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    text-decoration: none; /* Không gạch chân */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ khi di chuột qua */
+    border: none; /* Không viền */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+.contact-button:hover {
+    background-color: #0056b3; /* Màu nền khi di chuột qua */
+}
+
+#email-display {
+    font-size: 20px; /* Cỡ chữ */
+    margin-left: 10px; /* Khoảng cách với liên kết "Đăng xuất" */
+    font-weight: bold; /* In đậm */
+	}	
+.comment-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.comment-container h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.comment-container form {
+    margin-top: 10px;
+}
+
+.comment-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.comment-container form select,
+.comment-container form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.comment-container form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.comment-container form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.comment-container p {
+    margin-top: 10px;
+}
+

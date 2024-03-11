@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: 23%; /* Đặt chiều rộng của mỗi sản phẩm, để có 4 sản phẩm trên mỗi hàng */
+    margin-bottom: 20px; /* Khoảng cách dưới giữa mỗi sản phẩm */
+    padding: 10px; /* Khoảng cách bên trong của mỗi sản phẩm */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước ngoài cùng */
+    border: 1px solid #ccc; /* Viền sản phẩm */
+}
+
+.product img {
+    width: 100%; /* Chiều rộng của hình ảnh bài viết */
+    height: auto; /* Chiều cao tự động điều chỉnh */
+    display: block; /* Đảm bảo hình ảnh không bị lệch */
+    margin-bottom: 10px; /* Khoảng cách dưới giữa hình ảnh và các phần tử khác */
+}
+
+.product h2 {
+    font-size: 18px; /* Kích thước tiêu đề */
+    margin-bottom: 5px; /* Khoảng cách dưới giữa tiêu đề và các phần tử khác */
+}
+
+.product p {
+    margin-bottom: 5px; /* Khoảng cách dưới giữa các đoạn văn */
+}
+
+.product a {
+    display: inline-block; /* Đảm bảo nút "Xem chi tiết" có thể thêm margin */
+    padding: 5px 10px; /* Kích thước padding cho nút */
+    background-color: #007bff; /* Màu nền cho nút */
+    color: #fff; /* Màu chữ cho nút */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    border-radius: 5px; /* Bo tròn góc cho nút */
+}
+
+.product a:hover {
+    background-color: #0056b3; /* Màu nền cho nút khi di chuột qua */
+}
+
