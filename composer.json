@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "*",
+        "sendgrid/sendgrid": "*",
+        "mailgun/mailgun-php": "*"
+    }
+}
